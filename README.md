@@ -25,6 +25,17 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 - **Honest availability status** for the live web product and private iOS beta.
 - **Trust boundary** between public showcase content and private application code.
 
+## Engineering Contribution
+
+I independently built and operate the product behind this showcase.
+
+- **Backend workflow:** Built a FastAPI/PostgreSQL workflow that separates request acceptance from asynchronous speech processing and report generation.
+- **Durable submission:** Implemented transactional job creation and idempotent submission so a retry can return an existing job instead of admitting duplicate local work.
+- **Report pipeline:** Connected audio and whiteboard context to transcription, structured AI reports, and persistent report history, with explicit stage and failure states.
+- **Release verification:** Used synthetic accounts and scripted checks to validate selected runtime and browser paths. These checks establish the tested behavior, not user adoption, scoring accuracy, or an availability guarantee.
+
+This is a high-level summary of my implementation work. Private source code, user content, prompts, and operational details are not published here.
+
 ## Showcase Structure
 
 ```text
@@ -47,6 +58,7 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 This repository is intentionally limited to public-facing product content:
 
 - product positioning
+- high-level engineering contribution summary
 - screenshots and demo flow assets
 - static GitHub Pages implementation
 - links to legal and production app surfaces
