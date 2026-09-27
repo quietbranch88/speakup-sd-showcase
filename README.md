@@ -25,6 +25,8 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 - **Honest availability status** for the live web product and private iOS beta.
 - **Trust boundary** between public showcase content and private application code.
 
+The whiteboard and reports screenshots show empty workspaces. A completed AI feedback report is not included in the current public gallery.
+
 ## Engineering Contribution
 
 I independently built and operate the product behind this showcase.
