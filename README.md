@@ -8,7 +8,7 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 
 | Surface | Link |
 |---|---|
-| Canonical public showcase | https://zoetw88.github.io/speakup-sd-showcase/ |
+| Canonical public showcase | https://quietbranch88.github.io/speakup-sd-showcase/ |
 | Free question bank | https://speakupinterview.com/ |
 | Practice app | https://speakupinterview.com/app/ |
 | iOS | Internal TestFlight validation before public App Store release |
@@ -73,7 +73,7 @@ SpeakUp SD is built around a simple product belief: system design confidence com
 
 The showcase focuses on the visible user experience rather than the private implementation. The product itself includes practice prompts, spoken-answer flow, whiteboard work, reports, progress surfaces, and trust/legal pages.
 
-Built by **[Zoe](https://zoe-builds.com)** — practical AI products where evaluation, privacy, and backend reality are part of the product design.
+Built by **Quiet Branch** — practical AI products where evaluation, privacy, and backend reality are part of the product design.
 
 ## Maintenance
 
