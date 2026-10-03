@@ -77,4 +77,22 @@ Built by **Quiet Branch** — practical AI products where evaluation, privacy, a
 
 ## Maintenance
 
+### Showcase languages
+
+The showcase supports English, French, Traditional Chinese and Hindi through the
+header language selector. The initial language is English. A selected language is
+stored only in this site's browser localStorage (`speakup-showcase-language`) until
+changed or browser site data is cleared; it is not transmitted to a server.
+Switching still works when storage is blocked. Without JavaScript, the English
+page remains usable. Original product screenshots and linked app/legal pages keep
+their own language. This does not assert language support inside the product.
+
+Public copy is in `translations.js`; `language.js` applies it to the HTML's
+`data-i18n` markers, accessible labels and metadata. Keep every locale's keys in sync.
+Run `node --check language.js`, `node --check translations.js` and
+`git diff --check`. With Playwright available and Chrome installed, run
+`node tests/languages.cjs` (or set `PLAYWRIGHT_MODULE` to an existing installation).
+The test starts its own local static server. Set `SCREENSHOT_DIR` to an optional
+local output folder for screenshots. No production services are used by this test.
+
 This repo is suitable for GitHub Pages. Updates should keep the page focused, screenshot-driven, and safe for public review.

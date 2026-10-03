@@ -3,17 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SpeakUp SD | AI System Design Interview Practice</title>
+    <title data-i18n="title">SpeakUp SD | AI System Design Interview Practice</title>
     <meta
       name="description"
-      content="SpeakUp SD is an AI system design interview practice product available on the web, with iOS validation underway in TestFlight."
-    />
+      content="SpeakUp SD is an AI system design interview practice product available on the web, with iOS validation underway in TestFlight." data-i18n-content="description" />
     <meta property="og:title" content="SpeakUp SD" />
     <meta property="og:url" content="https://quietbranch88.github.io/speakup-sd-showcase/" />
     <meta
       property="og:description"
-      content="Practice system design aloud with a real question bank, AI interview workspace, whiteboard, and reports. Available on web; iOS internal beta underway."
-    />
+      content="Practice system design aloud with a real question bank, AI interview workspace, whiteboard, and reports. Available on web; iOS internal beta underway." data-i18n-content="socialDescription" />
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
@@ -21,7 +19,7 @@
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="SpeakUp SD voice and whiteboard practice workspace." />
+    <meta property="og:image:alt" content="SpeakUp SD voice and whiteboard practice workspace." data-i18n-content="socialAlt" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
@@ -29,92 +27,103 @@
     />
     <link rel="canonical" href="https://quietbranch88.github.io/speakup-sd-showcase/" />
     <link rel="icon" href="./assets/favicon.svg" />
-    <link rel="stylesheet" href="./styles.css?v=20260728-5" />
+    <link rel="stylesheet" href="./styles.css?v=20261003-1" />
+    <script src="./translations.js?v=20261003-1" defer></script>
+    <script src="./language.js?v=20261003-1" defer></script>
   </head>
   <body>
-    <header class="site-header" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="SpeakUp SD home">
+    <header class="site-header" aria-label="Main navigation" data-i18n-aria-label="navigation">
+      <a class="brand" href="#top" aria-label="SpeakUp SD home" data-i18n-aria-label="home">
         <span class="brand-mark" aria-hidden="true">SD</span>
         <span>SpeakUp SD</span>
       </a>
       <nav>
-        <a href="#features">Features</a>
-        <a href="#screens">Screens</a>
-        <a href="#flow">Flow</a>
-        <a href="#availability">Availability</a>
+        <a href="#features" data-i18n="features">Features</a>
+        <a href="#screens" data-i18n="screens">Screens</a>
+        <a href="#flow" data-i18n="flow">Flow</a>
+        <a href="#availability" data-i18n="availability">Availability</a>
       </nav>
-      <a class="header-action" href="https://speakupinterview.com/app/">Open app</a>
+      <a class="header-action" href="https://speakupinterview.com/app/" data-i18n="openApp">Open app</a>
+      <label class="language-control" hidden>
+        <span data-i18n="language">Language</span>
+        <select id="language-select" name="language">
+          <option value="en" lang="en">English</option>
+          <option value="fr" lang="fr">Français</option>
+          <option value="zh-Hant" lang="zh-Hant">繁體中文</option>
+          <option value="hi" lang="hi">हिन्दी</option>
+        </select>
+      </label>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Real product screens</p>
-          <h1 id="hero-title">AI interview practice you can actually inspect.</h1>
-          <p class="lede">
+          <p class="eyebrow" data-i18n="heroEyebrow">Real product screens</p>
+          <h1 id="hero-title" data-i18n="heroTitle">AI interview practice you can actually inspect.</h1>
+          <p class="lede" data-i18n="heroDescription">
             SpeakUp SD combines a serious system design question bank with an AI interview workspace,
             whiteboard evidence, recording consent, and readiness reports.
           </p>
           <div class="actions">
-            <a class="primary-action" href="https://speakupinterview.com/">Explore free questions</a>
-            <a class="secondary-action" href="#screens">View screens</a>
+            <a class="primary-action" href="https://speakupinterview.com/" data-i18n="exploreQuestions">Explore free questions</a>
+            <a class="secondary-action" href="#screens" data-i18n="viewScreens">View screens</a>
           </div>
         </div>
 
         <figure class="hero-media">
-          <img src="./assets/product-practice.png" alt="SpeakUp SD real app entrance showing the practice workspace, voice answer controls, and whiteboard." />
+          <img src="./assets/product-practice.png" alt="SpeakUp SD real app entrance showing the practice workspace, voice answer controls, and whiteboard." data-i18n-alt="heroAlt" />
           <figcaption>
-            <strong>Enter the real practice workspace</strong>
-            <span>Actual product capture with Start Mock, voice answer controls, and the whiteboard surface.</span>
+            <strong data-i18n="workspaceTitle">Enter the real practice workspace</strong>
+            <span data-i18n="workspaceCaption">Actual product capture with Start Mock, voice answer controls, and the whiteboard surface.</span>
           </figcaption>
         </figure>
       </section>
 
-      <section id="availability" class="availability-strip" aria-label="Product availability">
+      <section id="availability" class="availability-strip" aria-label="Product availability" data-i18n-aria-label="productAvailability">
         <div class="availability-status">
           <span class="status-dot" aria-hidden="true"></span>
           <div>
-            <p class="availability-label">Product availability</p>
-            <strong>Live on web. iOS internal beta in TestFlight.</strong>
-            <p>
+            <p class="availability-label" data-i18n="productAvailability">Product availability</p>
+            <strong data-i18n="availabilityTitle">Live on web. iOS internal beta in TestFlight.</strong>
+            <p data-i18n="availabilityDescription">
               The iPhone build is in private device validation before public App Store release.
             </p>
           </div>
         </div>
-        <a class="secondary-action" href="https://speakupinterview.com/app/">Practice on web</a>
+        <a class="secondary-action" href="https://speakupinterview.com/app/" data-i18n="practiceWeb">Practice on web</a>
       </section>
 
       <section id="features" class="feature-overview" aria-labelledby="features-title">
         <div class="feature-heading">
-          <p class="eyebrow">Why SpeakUp SD</p>
-          <h2 id="features-title">Practice the explanation, not just the diagram.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="why">Why SpeakUp SD</p>
+          <h2 id="features-title" data-i18n="featuresTitle">Practice the explanation, not just the diagram.</h2>
+          <p data-i18n="featuresDescription">
             Browse before signing in, rehearse aloud in a real interview structure, and leave
             knowing what to practice next.
           </p>
         </div>
 
-        <div class="signal-strip" aria-label="Product features">
+        <div class="signal-strip" aria-label="Product features" data-i18n-aria-label="productFeatures">
           <div>
-            <span>01 - START FREE</span>
-            <strong>Classic + AI question bank</strong>
-            <p>
+            <span data-i18n="startFree">01 - START FREE</span>
+            <strong data-i18n="questionBankTitle">Classic + AI question bank</strong>
+            <p data-i18n="questionBankDescription">
               Explore system design prompts, then use no-AI Open Practice with a timer, local
               recording, and desktop whiteboard.
             </p>
           </div>
           <div>
-            <span>02 - PRACTICE OUT LOUD</span>
-            <strong>A real four-phase interview</strong>
-            <p>
+            <span data-i18n="outLoud">02 - PRACTICE OUT LOUD</span>
+            <strong data-i18n="interviewTitle">A real four-phase interview</strong>
+            <p data-i18n="interviewDescription">
               Work through requirements, high-level design, technical deep dive, and trade-offs
               in Simulation or optional Guided Practice.
             </p>
           </div>
           <div>
-            <span>03 - IMPROVE</span>
-            <strong>Evidence into the next drill</strong>
-            <p>
+            <span data-i18n="improve">03 - IMPROVE</span>
+            <strong data-i18n="evidenceTitle">Evidence into the next drill</strong>
+            <p data-i18n="evidenceDescription">
               Keep voice and whiteboard evidence together, then review one combined report,
               skill signals, and a concrete next drill.
             </p>
@@ -124,9 +133,9 @@
 
       <section id="screens" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Actual UI</p>
-          <h2>Explore the practice workspace.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="actualUI">Actual UI</p>
+          <h2 data-i18n="screensTitle">Explore the practice workspace.</h2>
+          <p data-i18n="screensDescription">
             Browse question selection, the interview workspace, recording consent, and the
             whiteboard. The reports capture shows the workspace before a completed practice.
           </p>
@@ -134,42 +143,42 @@
 
         <div class="screen-grid">
           <figure class="screen-card">
-            <img src="./assets/product-question-bank-list.png" alt="SpeakUp SD real question bank topic list with AI Agent System selected." />
+            <img src="./assets/product-question-bank-list.png" alt="SpeakUp SD real question bank topic list with AI Agent System selected." data-i18n-alt="questionAlt" />
             <figcaption>
-              <strong>Question bank</strong>
-              <span>Searchable classic system design and AI system design prompts before entering the mock.</span>
+              <strong data-i18n="questionBank">Question bank</strong>
+              <span data-i18n="questionCaption">Searchable classic system design and AI system design prompts before entering the mock.</span>
             </figcaption>
           </figure>
 
           <figure class="screen-card">
-            <img src="./assets/product-interview-active.png" alt="SpeakUp SD active AI interview workspace with timer and whiteboard." />
+            <img src="./assets/product-interview-active.png" alt="SpeakUp SD active AI interview workspace with timer and whiteboard." data-i18n-alt="interviewAlt" />
             <figcaption>
-              <strong>AI interview workspace</strong>
-              <span>Timed prompt, voice answer area, interview steps, and whiteboard all in one practice surface.</span>
+              <strong data-i18n="interviewWorkspace">AI interview workspace</strong>
+              <span data-i18n="interviewCaption">Timed prompt, voice answer area, interview steps, and whiteboard all in one practice surface.</span>
             </figcaption>
           </figure>
 
           <figure class="screen-card">
-            <img src="./assets/product-recording-consent.png" alt="SpeakUp SD recording consent modal before voice answer." />
+            <img src="./assets/product-recording-consent.png" alt="SpeakUp SD recording consent modal before voice answer." data-i18n-alt="consentAlt" />
             <figcaption>
-              <strong>Recording consent</strong>
-              <span>The product asks for age and recording consent before processing voice answers.</span>
+              <strong data-i18n="consent">Recording consent</strong>
+              <span data-i18n="consentCaption">The product asks for age and recording consent before processing voice answers.</span>
             </figcaption>
           </figure>
 
           <figure class="screen-card">
-            <img src="./assets/product-board.png" alt="SpeakUp SD empty whiteboard workspace, ready for a system design diagram." />
+            <img src="./assets/product-board.png" alt="SpeakUp SD empty whiteboard workspace, ready for a system design diagram." data-i18n-alt="boardAlt" />
             <figcaption>
-              <strong>Whiteboard workspace</strong>
-              <span>An empty canvas ready for architecture diagrams alongside a spoken explanation.</span>
+              <strong data-i18n="board">Whiteboard workspace</strong>
+              <span data-i18n="boardCaption">An empty canvas ready for architecture diagrams alongside a spoken explanation.</span>
             </figcaption>
           </figure>
 
           <figure class="screen-card">
-            <img src="./assets/product-reports.png" alt="SpeakUp SD empty reports workspace with zero completed practices." />
+            <img src="./assets/product-reports.png" alt="SpeakUp SD empty reports workspace with zero completed practices." data-i18n-alt="reportsAlt" />
             <figcaption>
-              <strong>Reports workspace — before the first practice</strong>
-              <span>This capture shows the empty history and skill chart. It does not show a completed AI feedback report.</span>
+              <strong data-i18n="reports">Reports workspace — before the first practice</strong>
+              <span data-i18n="reportsCaption">This capture shows the empty history and skill chart. It does not show a completed AI feedback report.</span>
             </figcaption>
           </figure>
         </div>
@@ -177,38 +186,38 @@
 
       <section id="flow" class="section split compact-section">
         <div class="section-copy">
-          <p class="eyebrow">Practice Loop</p>
-          <h2>Browse first. Interview second. Review what happened.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="practiceLoop">Practice Loop</p>
+          <h2 data-i18n="flowTitle">Browse first. Interview second. Review what happened.</h2>
+          <p data-i18n="flowDescription">
             The product separates question discovery from the mock interview flow, then connects
             voice practice, whiteboard work, and reporting into one reviewable training loop.
           </p>
         </div>
         <div class="flow-stack">
-          <span>Browse the question bank</span>
-          <span>Select a system design prompt</span>
-          <span>Run an AI interview with whiteboard</span>
-          <span>Review report and next drill</span>
+          <span data-i18n="flowBrowse">Browse the question bank</span>
+          <span data-i18n="flowSelect">Select a system design prompt</span>
+          <span data-i18n="flowInterview">Run an AI interview with whiteboard</span>
+          <span data-i18n="flowReview">Review report and next drill</span>
         </div>
       </section>
 
       <section id="trust" class="section trust compact-section">
         <div>
-          <p class="eyebrow">Public Surface</p>
-          <h2>A product showcase, not a source-code dump.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="publicSurface">Public Surface</p>
+          <h2 data-i18n="trustTitle">A product showcase, not a source-code dump.</h2>
+          <p data-i18n="trustDescription">
             This repository keeps the product inspectable through screenshots and public links
             without exposing private app source code, credentials, prompts, or operational material.
           </p>
         </div>
-        <a class="primary-action" href="https://speakupinterview.com/">Explore SpeakUp SD</a>
+        <a class="primary-action" href="https://speakupinterview.com/" data-i18n="explore">Explore SpeakUp SD</a>
       </section>
     </main>
 
     <footer>
       <span>SpeakUp SD</span>
-      <a href="https://speakupinterview.com/privacy-policy/">Privacy</a>
-      <a href="https://speakupinterview.com/terms-of-service/">Terms</a>
+      <a href="https://speakupinterview.com/privacy-policy/" data-i18n="privacy">Privacy</a>
+      <a href="https://speakupinterview.com/terms-of-service/" data-i18n="terms">Terms</a>
     </footer>
   </body>
 </html>
