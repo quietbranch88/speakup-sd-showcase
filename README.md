@@ -89,9 +89,12 @@ their own language. This does not assert language support inside the product.
 
 Public copy is in `translations.js`; `language.js` applies it to the HTML's
 `data-i18n` markers, accessible labels and metadata. Keep every locale's keys in sync.
-Run `node --check language.js`, `node --check translations.js` and
-`git diff --check`. With Playwright available and Chrome installed, run
-`node tests/languages.cjs` (or set `PLAYWRIGHT_MODULE` to an existing installation).
+Use Node.js 22 or newer. Run `npm ci --ignore-scripts` to install the locked
+development-only Playwright dependency, then `npx playwright install chrome`
+if Chrome is not installed. Run `npm run check`, `npm test` and
+`git diff --check`. `PLAYWRIGHT_MODULE` can optionally select an existing installation.
+The `Verify showcase` workflow runs these checks on pull requests and main pushes.
+Pages publication is a separate workflow; this check does not itself enforce branch protection.
 The test starts its own local static server. Set `SCREENSHOT_DIR` to an optional
 local output folder for screenshots. No production services are used by this test.
 

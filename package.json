@@ -1,0 +1,15 @@
+{
+  "name": "speakup-sd-showcase",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "check": "node --check language.js && node --check translations.js",
+    "test": "node tests/languages.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
